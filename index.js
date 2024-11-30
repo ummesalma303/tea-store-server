@@ -53,8 +53,6 @@ app.get('/tea',async(req,res)=>{
 })
 
 
-
-
 // *post means => create
 // *post data
 
@@ -64,7 +62,7 @@ app.post("/tea",async(req,res)=>{
   
   const result = await teaCollection.insertOne(newTea);
   res.send(result)
-  console.log(result,'result in mongodb')
+  // console.log(result,'result in mongodb')
 })
 
 
